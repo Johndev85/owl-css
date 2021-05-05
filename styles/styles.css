@@ -1,0 +1,110 @@
+/*****************GLOBALS***********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-backg);
+}
+
+/*****************VARIABLES***********************/
+:root {
+    --main-backg: #000022;
+    --color-nose: rgba(255, 166, 0, 0.856);
+    --color-body: rgb(80, 202, 80);
+}
+
+/***************************************/
+
+.conter {
+    width: 50%;
+    height: 90%;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+.conter__padding {
+    width: calc(100% - 50);
+    height: 100%;
+    margin: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    border: 1px solid red;
+}
+
+.head {
+    width: 450px;
+    height: 130px;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 80px;
+    border: 1px solid black;
+}
+
+.head .rigtEye {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid brown;
+    background-color: brown;
+}
+
+.head .leftEye {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid brown;
+    background-color: brown;
+}
+
+.nose {
+    position: absolute;
+    top: 150px;
+    width: 0;
+    height: 0;
+    border-top: 130px solid var(--color-nose);
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.torso {
+    width: 60%;
+    height: 300px;
+    margin: 1em;
+    background-color: papayawhip;
+    border-top-left-radius: 50px;
+}
+
+.left-arm {
+    width: 25%;
+    height: 290px;
+    background-color: var(--color-body);
+}
+
+.right-arm {
+    width: 25%;
+    height: 290px;
+    background-color: var(--color-body);
+}
